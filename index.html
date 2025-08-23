@@ -112,6 +112,19 @@
         <div class="header">
             <h1>Best Weight Loss Solutions</h1>
             <p>Compare top-rated options and find what works for you</p>
+            
+            <!-- Email Capture Form -->
+            <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <h3 style="margin: 0 0 10px 0; color: white;">Get Your FREE Weight Loss Guide</h3>
+                <p style="margin: 0 0 15px 0; color: rgba(255,255,255,0.9); font-size: 14px;">Proven strategies that helped thousands lose 20+ pounds</p>
+                <form id="email-form" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <input type="email" id="email-input" placeholder="Enter your email address" required 
+                           style="flex: 1; min-width: 250px; padding: 12px; border: none; border-radius: 6px; font-size: 16px;">
+                    <button type="submit" style="background: #ff6b35; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; white-space: nowrap;">
+                        Get Free Guide
+                    </button>
+                </form>
+            </div>
         </div>
         
         <!-- Top Ad Banner -->
@@ -247,6 +260,56 @@
             }).catch(err => console.log('Tracking request failed:', err));
         }
         
+        // Email form handler
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('email-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = document.getElementById('email-input').value;
+                const button = e.target.querySelector('button');
+                const originalText = button.textContent;
+                
+                // Update button state
+                button.textContent = 'Subscribing...';
+                button.disabled = true;
+                
+                // Track email signup
+                trackClick('email-signup');
+                gtag('event', 'email_signup', {
+                    'event_category': 'lead_generation',
+                    'event_label': 'header_form'
+                });
+                
+                // Mailchimp signup (you'll need to replace with your actual endpoint)
+                fetch('https://gmail.us11.list-manage.com/subscribe/post-json?u=YOUR_USER_ID&id=YOUR_LIST_ID&c=?', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    body: new URLSearchParams({
+                        'EMAIL': email,
+                        'b_YOUR_USER_ID_YOUR_LIST_ID': ''
+                    })
+                }).then(() => {
+                    // Success state
+                    button.textContent = 'Check Your Email!';
+                    button.style.background = '#28a745';
+                    document.getElementById('email-input').value = '';
+                    
+                    // Show success message
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.style.background = '#ff6b35';
+                        button.disabled = false;
+                    }, 3000);
+                    
+                }).catch(err => {
+                    console.log('Signup error:', err);
+                    button.textContent = originalText;
+                    button.disabled = false;
+                });
+            });
+        });
+        
         // Track page view on load
         window.addEventListener('load', function() {
             trackClick('pageview');
@@ -263,5 +326,8 @@
             }));
         });
     </script>
+    
+    <!-- Mailchimp Popup -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/eddb26b172c6f3b5b874d95a7/f72a89d9d7c7ab0c59f9daa38.js");</script>
 </body>
 </html>
