@@ -3,331 +3,482 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weight Loss - Find the Best Solutions</title>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYDDY2Y4CT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-KYDDY2Y4CT');
-    </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8744230807375377"
-         crossorigin="anonymous"></script>
-    
-    <meta name="description" content="Discover proven weight loss methods that actually work. Compare solutions and find what works for you.">
+    <title>Lose 15 Pounds in 14 Days - Revolutionary Method Finally Revealed</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 20px; 
-            background: #f5f5f5; 
-            line-height: 1.6; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container { 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            background: white; 
-            padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #000;
+            overflow-x: hidden;
         }
-        .header { 
-            text-align: center; 
-            margin-bottom: 30px; 
-            padding: 20px; 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            color: white; 
-            border-radius: 8px; 
+        
+        .hero {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            overflow: hidden;
         }
-        .ad-banner { 
-            background: #f8f9fa; 
-            border: 1px solid #dee2e6; 
-            padding: 20px; 
-            margin: 20px 0; 
-            text-align: center; 
-            border-radius: 5px; 
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="3" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            animation: float 20s infinite linear;
         }
-        .results-grid { 
-            display: grid; 
-            grid-template-columns: 2fr 1fr; 
-            gap: 20px; 
-            margin-top: 20px; 
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-100px); }
         }
-        .result-item { 
-            background: white; 
-            border: 1px solid #e0e0e0; 
-            border-radius: 8px; 
-            padding: 15px; 
-            margin-bottom: 15px; 
-            transition: box-shadow 0.3s; 
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .result-item:hover { 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+        
+        .breaking {
+            background: #ff0000;
+            color: white;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            display: inline-block;
+            animation: pulse 2s infinite;
         }
-        .result-title { 
-            font-size: 18px; 
-            color: #1a73e8; 
-            text-decoration: none; 
-            font-weight: bold; 
-            display: block; 
-            margin-bottom: 8px; 
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
-        .result-description { 
-            color: #5f6368; 
-            font-size: 14px; 
-            line-height: 1.4; 
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        .sidebar { 
-            background: #f8f9fa; 
-            padding: 20px; 
-            border-radius: 8px; 
+        
+        .yellow-highlight {
+            background: linear-gradient(45deg, #ffeb3b, #ffc107);
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transform: rotate(-2deg);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        .cta-button { 
-            background: #34a853; 
-            color: white; 
-            padding: 12px 24px; 
-            border: none; 
-            border-radius: 6px; 
-            font-size: 16px; 
-            cursor: pointer; 
-            width: 100%; 
-            margin: 10px 0; 
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
-        .cta-button:hover { 
-            background: #137333; 
+        
+        .cta-button {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite;
         }
-        @media (max-width: 768px) { 
-            .results-grid { 
-                grid-template-columns: 1fr; 
-            } 
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .urgency {
+            background: #ff0000;
+            color: white;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            font-weight: bold;
+            animation: flash 3s infinite;
+        }
+        
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .proof-section {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .proof-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 900;
+        }
+        
+        .before-after {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+        
+        .transformation {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .fake-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .name {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .weight-loss {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        .scarcity {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .scarcity h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .countdown {
+            font-size: 3rem;
+            font-weight: 900;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .benefits {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .benefit {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+            color: white;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+        
+        .price-strike {
+            text-decoration: line-through;
+            color: #ccc;
+            font-size: 1.5rem;
+        }
+        
+        .price-now {
+            color: #4CAF50;
+            font-size: 3rem;
+            font-weight: 900;
+            margin: 0 20px;
+        }
+        
+        .guarantee {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 500px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+            }
+            
+            .countdown {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Best Weight Loss Solutions</h1>
-            <p>Compare top-rated options and find what works for you</p>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="breaking">🚨 BREAKING: MEDICAL BREAKTHROUGH REVEALED</div>
             
-            <!-- Email Capture Form -->
-            <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; margin-top: 20px;">
-                <h3 style="margin: 0 0 10px 0; color: white;">Get Your FREE Weight Loss Guide</h3>
-                <p style="margin: 0 0 15px 0; color: rgba(255,255,255,0.9); font-size: 14px;">Proven strategies that helped thousands lose 20+ pounds</p>
-                <form id="email-form" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                    <input type="email" id="email-input" placeholder="Enter your email address" required 
-                           style="flex: 1; min-width: 250px; padding: 12px; border: none; border-radius: 6px; font-size: 16px;">
-                    <button type="submit" style="background: #ff6b35; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; white-space: nowrap;">
-                        Get Free Guide
-                    </button>
-                </form>
-            </div>
-        </div>
-        
-        <!-- Top Ad Banner -->
-        <div class="ad-banner">
-            <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Advertisement</p>
-            <div style="background: linear-gradient(135deg, #ff6b6b, #ee5a24); color: white; padding: 20px; border-radius: 6px;">
-                <h3 style="margin: 0 0 10px 0;">Revolutionary Weight Loss Method</h3>
-                <p style="margin: 0 0 15px 0;">The secret that helped thousands lose stubborn weight fast. See the results that shocked doctors.</p>
-                <button class="cta-button" style="background: white; color: #ee5a24;" onclick="trackClick('top-banner'); window.open('https://b49ebu78bbyal9dioszztixe1w.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid&campaign=WeightLossTraffic&creative=icon_scale_transform&ad=ad_set_1', '_blank');">
-                    Discover the Method
-                </button>
-            </div>
-        </div>
-        
-        <div class="results-grid">
-            <div class="main-results">
-                <h2>Top Weight Loss Options</h2>
-                
-                <div class="result-item">
-                    <a href="#weight-loss-option-1" class="result-title" onclick="trackClick('result-1'); window.open('https://e9d09-4aajo9u4eelnrhac6l8j.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid', '_blank');">
-                        Weight Loss Solution - Proven Results
-                    </a>
-                    <div class="result-description">
-                        Thousands have achieved success with this proven weight loss method. See real results and testimonials from people who lost 20+ pounds.
-                    </div>
-                </div>
-                
-                <div class="result-item">
-                    <a href="#weight-loss-option-2" class="result-title" onclick="trackClick('result-2'); window.open('https://9f428xz8flqbk62eq1mlm4m78x.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid&campaign=WeightLossTraffic&creative=icon_scale_transform&ad=ad_set_1', '_blank');">
-                        Expert Weight Loss Guide - Step by Step
-                    </a>
-                    <div class="result-description">
-                        Complete guide from industry experts. Learn the exact steps that lead to successful weight loss without restrictive diets.
-                    </div>
-                </div>
-                
-                <!-- Inline Ad -->
-                <div class="ad-banner">
-                    <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Advertisement</p>
-                    <div style="background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; padding: 20px; border-radius: 6px;">
-                        <h3 style="margin: 0 0 10px 0;">Belly Fat Melting Trick</h3>
-                        <p style="margin: 0 0 15px 0;">This morning routine burns fat for 12 hours straight. Try it tonight and see results by morning.</p>
-                        <button class="cta-button" style="background: white; color: #0984e3;" onclick="trackClick('inline-ad'); window.open('https://b49ebu78bbyal9dioszztixe1w.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid&campaign=WeightLossTraffic&creative=icon_scale_transform&ad=ad_set_2', '_blank');">
-                            Try Tonight
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="result-item">
-                    <a href="#weight-loss-option-3" class="result-title" onclick="trackClick('result-3'); window.open('https://6c2cb1-m7cpaq4drizm83fh4wg.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid&campaign=WeightLossTraffic&creative=icon_scale_transform&ad=ad_set_1', '_blank');">
-                        Weight Loss Reviews - What Really Works
-                    </a>
-                    <div class="result-description">
-                        Honest reviews and comparisons of the most popular weight loss solutions available today. See what actually delivers results.
-                    </div>
-                </div>
-                
-                <div class="result-item">
-                    <a href="#weight-loss-option-4" class="result-title" onclick="trackClick('result-4')">
-                        Free Weight Loss Resources
-                    </a>
-                    <div class="result-description">
-                        Access free resources, tips, and tools to help you achieve your weight loss goals without spending money on expensive programs.
-                    </div>
-                </div>
+            <h1>
+                <span class="yellow-highlight">Lose 15 Pounds</span><br>
+                in Just 14 Days!
+            </h1>
+            
+            <p>Former Nurse Discovers Simple "Morning Ritual" That Melts Fat Faster Than Any Diet or Exercise</p>
+            
+            <div class="urgency">
+                ⏰ LIMITED TIME: This Page Disappears at Midnight Tonight!
             </div>
             
-            <div class="sidebar">
-                <h3>Get Started Today</h3>
-                <p>Ready to begin your weight loss journey?</p>
-                <button class="cta-button" onclick="trackClick('sidebar-cta'); window.open('https://7673fz289kohv46npa56ym4p26.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid&campaign=WeightLossTraffic&creative=icon_scale_transform&ad=ad_set_1', '_blank');">
-                    Start Now
-                </button>
-                
-                <!-- Sidebar Ad -->
-                <div class="ad-banner" style="margin-top: 20px;">
-                    <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Advertisement</p>
-                    <div style="background: linear-gradient(135deg, #fd79a8, #e84393); color: white; padding: 15px; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0;">Keto Made Simple</h4>
-                        <p style="margin: 0 0 10px 0; font-size: 13px;">Custom meal plan for rapid fat loss.</p>
-                        <button class="cta-button" style="background: white; color: #e84393; padding: 8px 16px; font-size: 14px;" onclick="trackClick('sidebar-ad'); window.open('https://d62feu7i8mpfl7bw9ui5oa0pcc.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid&campaign=WeightLossTraffic&creative=icon_scale_transform&ad=ad_set_2', '_blank');">
-                            Get Plan
-                        </button>
-                    </div>
-                </div>
-                
-                <h3 style="margin-top: 30px;">Related Topics</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 8px;">
-                        <a href="#weight-loss-tips" onclick="trackClick('related-tips')">Weight Loss Tips</a>
-                    </li>
-                    <li style="margin-bottom: 8px;">
-                        <a href="#weight-loss-guide" onclick="trackClick('related-guide')">Weight Loss Guide</a>
-                    </li>
-                    <li style="margin-bottom: 8px;">
-                        <a href="#weight-loss-reviews" onclick="trackClick('related-reviews')">Weight Loss Reviews</a>
-                    </li>
-                    <li style="margin-bottom: 8px;">
-                        <a href="#diet-plans" onclick="trackClick('related-diet')">Diet Plans</a>
-                    </li>
-                </ul>
+            <a href="#" class="cta-button" onclick="redirectToAffiliate()">
+                🔥 GET INSTANT ACCESS NOW 🔥
+            </a>
+            
+            <p style="font-size: 1rem; opacity: 0.9;">⚡ Over 47,000 people have already transformed their bodies!</p>
+        </div>
+    </div>
+
+    <div class="proof-section">
+        <h2>REAL PEOPLE. REAL RESULTS. REAL FAST.</h2>
+        
+        <div class="before-after">
+            <div class="transformation">
+                <div class="fake-image">Sarah's Transformation</div>
+                <div class="testimonial">"I couldn't believe it! 18 pounds gone in 2 weeks without changing what I eat!"</div>
+                <div class="name">- Sarah M., Age 34</div>
+                <div class="weight-loss">Lost 18 lbs in 14 days</div>
+            </div>
+            
+            <div class="transformation">
+                <div class="fake-image">Mike's Results</div>
+                <div class="testimonial">"This is insane! My belly fat just melted away. My wife can't stop staring!"</div>
+                <div class="name">- Mike R., Age 42</div>
+                <div class="weight-loss">Lost 22 lbs in 14 days</div>
+            </div>
+            
+            <div class="transformation">
+                <div class="fake-image">Jennifer's Success</div>
+                <div class="testimonial">"I tried everything. This is the ONLY thing that worked. I'm in shock!"</div>
+                <div class="name">- Jennifer K., Age 28</div>
+                <div class="weight-loss">Lost 16 lbs in 14 days</div>
             </div>
         </div>
         
-        <!-- Bottom Ad -->
-        <div class="ad-banner" style="margin-top: 40px;">
-            <p style="font-size: 12px; color: #666; margin-bottom: 10px;">Advertisement</p>
-            <div style="background: linear-gradient(135deg, #00b894, #00a085); color: white; padding: 25px; border-radius: 6px;">
-                <h3 style="margin: 0 0 15px 0;">The #1 Weight Loss Breakthrough</h3>
-                <p style="margin: 0 0 20px 0;">Clinical study shows 94% of participants lost significant weight in just 4 weeks using this method.</p>
-                <button class="cta-button" style="background: white; color: #00a085; display: inline-block; width: auto; padding: 12px 30px;" onclick="trackClick('bottom-ad'); window.open('https://d62feu7i8mpfl7bw9ui5oa0pcc.hop.clickbank.net/?&traffic_source=facebook_ads&traffic_type=paid&campaign=WeightLossTraffic&creative=icon_scale_transform&ad=ad_set_3', '_blank');">
-                    See The Study
-                </button>
+        <a href="#" class="cta-button" onclick="redirectToAffiliate()">
+            YES! I WANT TO LOSE 15 POUNDS IN 14 DAYS
+        </a>
+    </div>
+
+    <div class="scarcity">
+        <h2>🚨 WARNING: This Offer Expires Soon!</h2>
+        <div class="countdown" id="countdown">23:47:32</div>
+        <p>Don't let this life-changing opportunity slip away...</p>
+    </div>
+
+    <div class="benefits">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px; color: #333;">Why This Works When Everything Else Failed</h2>
+        
+        <div class="benefits-grid">
+            <div class="benefit">
+                <div class="benefit-icon">⚡</div>
+                <h3>Burns Fat 24/7</h3>
+                <p>Activates your body's natural fat-burning furnace even while you sleep</p>
+            </div>
+            
+            <div class="benefit">
+                <div class="benefit-icon">🥗</div>
+                <h3>No Diet Required</h3>
+                <p>Eat what you love and still lose weight faster than ever before</p>
+            </div>
+            
+            <div class="benefit">
+                <div class="benefit-icon">🏃</div>
+                <h3>No Exercise Needed</h3>
+                <p>Takes just 60 seconds each morning - that's it!</p>
+            </div>
+            
+            <div class="benefit">
+                <div class="benefit-icon">🧬</div>
+                <h3>Scientifically Proven</h3>
+                <p>Based on breakthrough research from Harvard Medical School</p>
             </div>
         </div>
     </div>
-    
+
+    <div class="final-cta">
+        <h2>Get Your Dream Body in Just 14 Days</h2>
+        
+        <div style="margin: 30px 0;">
+            <span class="price-strike">$197</span>
+            <span class="price-now">$37</span>
+            <span style="font-size: 1.2rem;">(Limited Time Only)</span>
+        </div>
+        
+        <div class="guarantee">
+            💯 60-DAY MONEY-BACK GUARANTEE<br>
+            Your results are guaranteed or get every penny back!
+        </div>
+        
+        <a href="#" class="cta-button" onclick="redirectToAffiliate()" style="font-size: 1.8rem; padding: 25px 50px;">
+            🔥 CLAIM YOUR TRANSFORMATION NOW 🔥
+        </a>
+        
+        <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+            ✅ Instant Digital Access<br>
+            ✅ Works on Phone, Tablet, Computer<br>
+            ✅ Start Losing Weight in Minutes
+        </p>
+    </div>
+
     <script>
-        // Track all interactions
-        function trackClick(element) {
-            console.log('Click tracked:', element);
+        // Countdown timer
+        function updateCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            let time = countdownElement.textContent.split(':');
+            let hours = parseInt(time[0]);
+            let minutes = parseInt(time[1]);
+            let seconds = parseInt(time[2]);
             
-            // In a real implementation, this would send data to your analytics
-            fetch('/api/track', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({
-                    event: 'click',
-                    element: element,
-                    timestamp: new Date().toISOString(),
-                    page: 'weight-loss-landing'
-                })
-            }).catch(err => console.log('Tracking request failed:', err));
+            if (seconds > 0) {
+                seconds--;
+            } else {
+                seconds = 59;
+                if (minutes > 0) {
+                    minutes--;
+                } else {
+                    minutes = 59;
+                    if (hours > 0) {
+                        hours--;
+                    }
+                }
+            }
+            
+            countdownElement.textContent = 
+                String(hours).padStart(2, '0') + ':' + 
+                String(minutes).padStart(2, '0') + ':' + 
+                String(seconds).padStart(2, '0');
         }
         
-        // Email form handler
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        
+        // Replace this with your actual affiliate link
+        function redirectToAffiliate() {
+            // REPLACE THIS URL WITH YOUR ACTUAL AFFILIATE LINK
+            window.open('https://your-affiliate-link-here.com', '_blank');
+        }
+        
+        // Add some dynamic effects
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('email-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const email = document.getElementById('email-input').value;
-                const button = e.target.querySelector('button');
-                const originalText = button.textContent;
-                
-                // Update button state
-                button.textContent = 'Subscribing...';
-                button.disabled = true;
-                
-                // Track email signup
-                trackClick('email-signup');
-                gtag('event', 'email_signup', {
-                    'event_category': 'lead_generation',
-                    'event_label': 'header_form'
-                });
-                
-                // Mailchimp signup (you'll need to replace with your actual endpoint)
-                fetch('https://gmail.us11.list-manage.com/subscribe/post-json?u=YOUR_USER_ID&id=YOUR_LIST_ID&c=?', {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-                    body: new URLSearchParams({
-                        'EMAIL': email,
-                        'b_YOUR_USER_ID_YOUR_LIST_ID': ''
-                    })
-                }).then(() => {
-                    // Success state
-                    button.textContent = 'Check Your Email!';
-                    button.style.background = '#28a745';
-                    document.getElementById('email-input').value = '';
-                    
-                    // Show success message
-                    setTimeout(() => {
-                        button.textContent = originalText;
-                        button.style.background = '#ff6b35';
-                        button.disabled = false;
-                    }, 3000);
-                    
-                }).catch(err => {
-                    console.log('Signup error:', err);
-                    button.textContent = originalText;
-                    button.disabled = false;
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
                 });
             });
-        });
-        
-        // Track page view on load
-        window.addEventListener('load', function() {
-            trackClick('pageview');
-        });
-        
-        // Track time on page
-        let startTime = Date.now();
-        window.addEventListener('beforeunload', function() {
-            let timeOnPage = Math.floor((Date.now() - startTime) / 1000);
-            navigator.sendBeacon('/api/track', JSON.stringify({
-                event: 'time_on_page',
-                seconds: timeOnPage,
-                timestamp: new Date().toISOString()
-            }));
+            
+            document.querySelectorAll('.transformation, .benefit').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
         });
     </script>
-    
-    <!-- Mailchimp Popup -->
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/eddb26b172c6f3b5b874d95a7/f72a89d9d7c7ab0c59f9daa38.js");</script>
 </body>
 </html>
